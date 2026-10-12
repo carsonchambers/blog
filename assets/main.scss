@@ -1,0 +1,102 @@
+---
+---
+
+@import "minima";
+
+// Header: title with the description tucked underneath, author on the right
+.site-header .wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: $spacing-unit / 3;
+  padding-bottom: $spacing-unit / 3;
+
+  // minima's clearfix would become a stray flex item
+  &::after {
+    display: none;
+  }
+}
+
+.site-title {
+  float: none;
+  display: block;
+  line-height: 1.2;
+}
+
+.site-description {
+  @include relative-font-size(0.875);
+  color: $grey-color;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.site-author {
+  margin-left: auto;
+  color: $grey-color;
+}
+
+// Sub-header: Posts / Tags / RSS
+.site-header {
+  // minima sizes the header for a single row; let it grow to fit the sub-header
+  min-height: 0;
+}
+
+.site-header .site-subnav .wrapper {
+  padding-top: $spacing-unit / 6;
+  padding-bottom: $spacing-unit / 6;
+}
+
+.site-subnav {
+  border-top: 1px solid $grey-color-light;
+  @include relative-font-size(0.875);
+}
+
+.subnav-link {
+  color: $grey-color;
+  margin-right: $spacing-unit / 1.5;
+
+  &:visited {
+    color: $grey-color;
+  }
+
+  &.active,
+  &:hover {
+    color: $text-color;
+  }
+}
+
+// Tags
+.post-tag {
+  margin-left: $spacing-unit / 3;
+}
+
+.tag-post-list {
+  list-style: none;
+  margin-left: 0;
+
+  .post-meta {
+    display: inline-block;
+    min-width: 7em;
+  }
+}
+
+// Context: links into Neovim's :help
+.post-context {
+  font-size: $small-font-size;
+  color: $grey-color;
+
+  a {
+    margin-left: 0.4em;
+  }
+}
+
+// Asides in posts, written as markdown blockquotes (`> **Hint:** ...`).
+// Replaces minima's large italic blockquote style.
+blockquote {
+  font-size: $small-font-size;
+  font-style: normal;
+  letter-spacing: normal;
+  color: $grey-color-dark;
+  margin-left: $spacing-unit;
+  padding-left: $spacing-unit / 2;
+  border-left: 3px solid $grey-color-light;
+}

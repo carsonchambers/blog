@@ -1,0 +1,8 @@
+{%- comment -%} Tag links for a post. Usage: {% include post-tags.html tags=page.tags %} {%- endcomment -%}
+{%- if include.tags and include.tags.size > 0 -%}
+<span class="post-tags">
+  {%- for tag in include.tags -%}
+  <a class="post-tag" href="{{ "/tags/" | relative_url }}#{{ tag | slugify }}">#{{ tag }}</a>
+  {%- endfor -%}
+</span>
+{%- endif -%}

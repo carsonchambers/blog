@@ -1,0 +1,16 @@
+{%- comment -%}
+  Links to Neovim's :help for each entry in a post's `context` front matter.
+  Accepts a list (context: [":sort", "gq"]) or a comma-separated string (context: ":sort, gq").
+  neovim.io/doc/user/helptag/ looks the tag up and redirects to the right help page.
+{%- endcomment -%}
+{%- assign entries = include.context | join: "," | split: "," -%}
+{%- if entries.size > 0 -%}
+<p class="post-context">
+  <span class="post-context-label">Context:</span>
+  {%- for entry in entries -%}
+    {%- assign tag = entry | strip -%}
+    <a href="https://neovim.io/doc/user/helptag/?tag={{ tag | url_encode }}"><code>:h {{ tag | escape }}</code></a>
+    {%- unless forloop.last %},{% endunless -%}
+  {%- endfor -%}
+</p>
+{%- endif -%}

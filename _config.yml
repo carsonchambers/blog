@@ -1,5 +1,6 @@
-title: Carson Chambers Blog
-description: VIM tips and brain droppings
+title: Scratch Buffer
+description: Vim tips for the impractical programmer
+author: Carson Chambers
 theme: minima
 url: "https://carsonchambers.github.io"
 baseurl: "/blog"

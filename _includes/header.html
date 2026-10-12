@@ -1,0 +1,23 @@
+<header class="site-header" role="banner">
+
+  <div class="wrapper">
+    <div class="site-branding">
+      <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+      {%- if site.description %}
+      <p class="site-description">{{ site.description | escape }}</p>
+      {%- endif %}
+    </div>
+
+    {%- if site.author %}
+    <span class="site-author">{{ site.author | escape }}</span>
+    {%- endif %}
+  </div>
+
+  <nav class="site-subnav">
+    <div class="wrapper">
+      <a class="subnav-link{% if page.url == "/" or page.layout == "post" %} active{% endif %}" href="{{ "/" | relative_url }}">Posts</a>
+      <a class="subnav-link{% if page.url == "/tags/" %} active{% endif %}" href="{{ "/tags/" | relative_url }}">Tags</a>
+      <a class="subnav-link" href="{{ "/feed.xml" | relative_url }}">RSS</a>
+    </div>
+  </nav>
+</header>
