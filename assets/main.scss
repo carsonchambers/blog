@@ -90,7 +90,6 @@
 }
 
 // Asides in posts, written as markdown blockquotes (`> **Hint:** ...`).
-// Replaces minima's large italic blockquote style.
 blockquote {
   font-size: $small-font-size;
   font-style: normal;
@@ -99,4 +98,8 @@ blockquote {
   margin-left: $spacing-unit;
   padding-left: $spacing-unit / 2;
   border-left: 3px solid $grey-color-light;
+}
+
+.vim-error {
+  color: #d70000;
 }
