@@ -3,3 +3,5 @@ _site/
 .bundle/
 vendor/
 .nvim.lua
+_drafts
+bin
