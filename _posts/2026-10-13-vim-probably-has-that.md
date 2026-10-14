@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Vim probably has that"
-tags: [neovim, vim, plugins, git]
-context: ["Ex-mode", "diff", "signs", "lsp", "packages", "netrw"]
+tags: [neovim, vim, plugins, git, lsp, databases, remote-development]
+context: ["Cmdline-mode", "diff", "signs", "lsp", "lsp-config", "BufWritePre", "vim.pack", "packages", "netrw", "netrw-transparent", "recording", "registers", "motion.txt", "vim-modes", "quickfix"]
 date: 2026-10-13
 ---
 
@@ -20,7 +20,7 @@ Today we will discuss why Vim can do most of what your *fancy-dancy* editor does
 
 ## Version control integration (git, of course)
 Well, [tpope](https://github.com/tpope) saves the day again with [vim-fugitive](https://github.com/tpope/vim-fugitive). You can simply issue your cli git
-commands in Ex-mode, have an intuitive UI, and customize it to your liking. When
+commands in Command-line mode, have an intuitive UI, and customize it to your liking. When
 combined (optionally) with [diffview](https://github.com/sindrets/diffview.nvim)
 for reviewing diffs of a specific file or commit, and [gitsigns](https://github.com/lewis6991/gitsigns.nvim) for gutter markup and jumping to
 hunks, you really get all of the gitting you could possibly need.
