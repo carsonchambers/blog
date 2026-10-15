@@ -103,3 +103,8 @@ blockquote {
 .vim-error {
   color: #d70000;
 }
+
+// Keep inline `code` on one line; fenced blocks (pre > code) still scroll as usual
+:not(pre) > code {
+  white-space: nowrap;
+}
