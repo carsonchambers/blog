@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Vim probably has that"
-tags: [neovim, vim, plugins, git, lsp, databases, remote-development]
-context: ["Cmdline-mode", "diff", "signs", "lsp", "lsp-config", "BufWritePre", "vim.pack", "packages", "netrw", "netrw-transparent", "recording", "registers", "motion.txt", "vim-modes", "quickfix"]
+tags: [vim, plugins, rant]
+context: ["lsp", "packages", "registers", "motion.txt", "quickfix"]
 date: 2026-10-13
 ---
 
@@ -13,7 +13,7 @@ to the church of Vim. The heretics are usually split between "I already know
 this IDE" and "Vim doesn't have the functionality of my IDE". To the former, we
 call that Stockholm Syndrome. To the latter, we call that ignorance.
 
-Today we will discuss why Vim can do most of what your *fancy-dancy* editor does, and more. I will begin with the most common objections to get them out of the way, namely: Database integration, Version control integration, Language Server Protocol support (not that most people actually know to call it that), a plugin ecosystem, and remote development support. What you will find, is that all of these are from plugins, but that is sorta the point. Get what you want, nothing more, nothing less.
+Today we will discuss why Vim can do most of what your *fancy-dancy* editor does, and more. I will cover the most common objections, namely: Database integration, Version control integration, Language Server Protocol support (not that most people actually know to call it that), a plugin ecosystem, and remote development support. What you will find, is that all of these are from plugins, but that is sorta the point. Get what you want, nothing more, nothing less.
 
 ## Databases
 [Tim Pope](https://github.com/tpope) has an incredible plugin called [vim-dadbod](https://github.com/tpope/vim-dadbod). This plugin gives you access to databases with customizable configurations for all of the big names. Once you have this up and running you can execute sql chunks from files, entire files, or adhoc queries and get autocomplete results as you write.
